@@ -3,14 +3,14 @@ import "./styles.scss";
 let firstNumber = "0";
 let secondNumber = "0";
 let sign = "";
-let results = 0;
+const resultsDOM = document.querySelector(".result");
 
 const getNumberFromString = (string) => {
-  return Number.parseInt(Math.floor(string));
+  return parseInt(Math.floor(string));
 };
 
 const checkIfNumber = (string) => {
-  return !Number.isNaN(Number.parseInt(string));
+  return !isNaN(parseInt(string));
 };
 
 const reset = () => {
@@ -98,8 +98,9 @@ const activateCalculation = (event) => {
   resultsDOM.innerHTML = newResults;
 };
 
-const actionButtons = document.querySelector(".action-buttons");
-actionButtons.addEventListener("click", activateCalculation);
+const init = () => {
+  const actionButtons = document.querySelector(".action-buttons");
+  actionButtons.addEventListener("click", activateCalculation);
+};
 
-const resultsDOM = document.querySelector(".result");
-resultsDOM.innerHTML = results;
+init();
