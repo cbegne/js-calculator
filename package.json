@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "sass": "sass src/styles.scss main.css"
   },
   "dependencies": {},
   "devDependencies": {
