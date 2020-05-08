@@ -1,6 +1,6 @@
 # js-calculator
 
-Simplified rebuild of the calculator on iOS in vanilla JS.
+Simplified rebuild of the calculator on iOS in vanilla JS. https://cbegne.github.io/js-calculator/
 
 ![calculator](https://user-images.githubusercontent.com/23556987/81389626-6fdaaa00-911a-11ea-96c8-235044edbb82.png)
 
